@@ -16,7 +16,11 @@ const Countries = () => {
       <h1>Lets Travel Around The World!</h1>
       <h3>Available Countries : {countries.length}</h3>
       {countries.map((country) => (
-        <Country name={country.name.common}></Country>
+        <Country
+          name={country.name.common}
+          area={country.area}
+          population={country.population}
+        ></Country>
       ))}
     </div>
   );
